@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    clear: both; 
+    margin: 50px auto;
+    width: 80%;
+    text-align: left;
+    background-color: #39945f;
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Main Container */
+.Main {
+    background-color: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Navigation Bar */
+.pageHeader nav {
+    background: #2BA6CB;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+.pageHeader nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pageHeader nav ul li {
+    display: inline-block;
+}
+
+.pageHeader nav a {
+    color: #FFFFFF; 
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.pageHeader nav a:hover,
+.pageHeader nav a:active,
+.pageHeader nav .active a {
+    background: #243439;
+    color: #fff;
+}
+
+/* Content and Sidebar */
+.content {
+    width: 70%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.top-slider, .bottom-slidebar {
+    width: 25%;
+    float: left;
+    margin-left: 5%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.featured {
+    background-color: #FFFFFF;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.pagefooter {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2ba6cb;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pagefooter p {
+    margin: 0;
+    padding: 10px;
+}
+
+/* Miscellaneous */
+a {
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #11532d;
+    margin-bottom: 15px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Estilos para el enlace activo (.active) */
+.pageHeader nav .active a {
+    background-color: #FF5733; /* Cambia el color de fondo del enlace activo */
+    color: #FFFFFF; /* Cambia el color del texto del enlace activo */
+}
+
+/* Estilos para los demás enlaces */
+.pageHeader nav a {
+    color: #2BA6CB; /* Color del texto de los enlaces no activos */
+    background-color: transparent; /* Fondo transparente para los enlaces no activos */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover en los enlaces no activos */
+.pageHeader nav a:hover {
+    background-color: #FF5733; /* Cambia el fondo al pasar el mouse por encima */
+    color: #FFFFFF; /* Cambia el color del texto al pasar el mouse por encima */
+}
+
+
+
+/* Imagen en la esquina superior derecha, sin borde ni sombra */
+.corner-image {
+    position: absolute;
+    top: 0px; /* Ajusta la posición vertical de la imagen */
+    right: 10px; /* Ajusta la posición horizontal de la imagen */
+    width: 150px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border: none; /* Elimina el borde de la imagen, aunque no debería haber uno por defecto */
+    box-shadow: none; /* Elimina cualquier sombra que pueda estar aplicada */
+}
+
